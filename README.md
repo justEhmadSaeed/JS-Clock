@@ -1,2 +1,2 @@
 # JS-Clock
-A javascript Clock web app
+A simple javascript Clock web app
