@@ -1,5 +1,6 @@
 html {
-    background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=5);
+    /* background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=5); */
+    background-color: blueviolet;
     background-size: cover;
     font-family: 'helvetica neue';
     text-align: center;
@@ -43,4 +44,16 @@ html {
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.1s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  .second-hand{
+    background: crimson;
+    height: 3px;
+  }
+  .hour-hand{
+    background: darkorange;
+    height: 7px;
   }
