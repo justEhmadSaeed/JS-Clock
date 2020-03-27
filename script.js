@@ -1,6 +1,7 @@
 const secondHand = document.querySelector(".second-hand");
 const minuteHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
+const audio = document.querySelector("audio");
 
 const setDate = () => {
     const now = new Date();
@@ -17,6 +18,7 @@ const setDate = () => {
     // if (hour >= 12) hour -= 12;
     const hourDegree = hour * 30 + 90;
     hourHand.style.transform = `rotate(${hourDegree}deg)`;    
-    
+    audio.currentTime = 0;
+    audio.play();
 };
 setInterval(setDate, 1000);
